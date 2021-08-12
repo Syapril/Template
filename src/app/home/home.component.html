@@ -1,0 +1,575 @@
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-container navbar-wrapper">
+        <nav class="navbar header-navbar pcoded-header">
+            <div class="navbar-wrapper">
+                <div class="navbar-logo">
+                    <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="home.component.html">
+                        <i class="ti-menu"></i>
+                    </a>
+                    <div class="mobile-search waves-effect waves-light">
+                        <div class="header-search">
+                            <div class="main-search morphsearch-search">
+                                <div class="input-group">
+                                    <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword">
+                                    <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="home.component.html">
+                        <img class="img-fluid" src="assets/images/bjb.png" alt="" />
+                    </a>
+                    <a class="mobile-options waves-effect waves-light">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+
+                <div class="navbar-container container-fluid">
+                    <ul class="nav-left">
+                        <li>
+                            <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                <i class="ti-fullscreen"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="user-profile header-notification">
+                            <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                            <span>John Doe</span>
+                            <i class="ti-angle-down"></i>
+                            <ul class="show-notification profile-notification">
+                                <li class="waves-effect waves-light">
+                                        <a routerLinkActive="active" routerLink="/view">
+                                            <i class="ti-user"></i><b>View Profile</b>
+                                        </a>
+                                    
+                                </li>
+                                <li class="waves-effect waves-light">
+                                   
+                                        <a routerLinkActive="active" routerLink="/login">
+                                            <i class="ti-close"></i><b>Log-Out</b>
+                                        </a>
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <nav class="pcoded-navbar">
+                    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                    <div class="pcoded-inner-navbar main-menu">
+                        <div class="">
+                            <div class="main-menu-header">
+                                <img class="img-80 img-radius" src="assets/images/avatar-4.jpg"
+                                    alt="User-Profile-Image">
+                                <div class="user-details">
+                                    <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="main-menu-content">
+                                <ul>
+                                    <li class="more-details">
+                                        <a routerLinkActive="active" routerLink="/view">
+                                            <i class="ti-user"></i><b>View Profile</b>
+                                        </a>
+                                        <a routerLinkActive="active" routerLink="/login">
+                                            <i class="ti-close"></i><b>Logout</b>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-15 p-b-0">
+                            <form class="form-material">
+                                <div class="form-group form-primary">
+                                    <input type="text" name="footer-email" class="form-control" required="">
+                                    <span class="form-bar"></span>
+                                    <label class="float-label"><i class="fa fa-search m-r-10"></i>Search
+                                        Friend</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="pcoded-navigation-label" data-i18n="nav.category.menu">Menu</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li>
+                                <a class="waves-effect waves-dark" routerLinkActive="active" routerLink="/home">
+                                    <span class="pcoded-micon"><i class="ti-home"></i><b>h</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Home</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+
+                                    <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Data Profile</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class=" ">
+                                        <a routerLinkActive="active" routerLink="/view"
+                                            class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">View
+                                                    profile</span>
+                                                <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a routerLinkActive="active" routerLink="/edit"
+                                            class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Edit
+                                                Profile</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Forms &amp; Tables</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li>
+                                <a href="form-elements-component.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Form
+                                        Components</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bs-basic-table.html" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Basic
+                                        Table</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Sign Form</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Pages</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class=" ">
+                                        <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext"
+                                                data-i18n="nav.basic-components.alert">Login</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="register.component.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext"
+                                                data-i18n="nav.basic-components.breadcrumbs">Register</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="sample-page.html" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                            <span class="pcoded-mtext"
+                                                data-i18n="nav.basic-components.breadcrumbs">Sample Page</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="pcoded-content">
+                    <!-- Page-header start -->
+                    <div class="page-header">
+                        <div class="page-block">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <div class="page-header-title">
+                                        <h5 class="m-b-10">Administrasi</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page-header end -->
+                    <div class="pcoded-inner-content">
+                        <!-- Main-body start -->
+                        <div class="main-body">
+                            <div class="page-wrapper">
+                                <!-- Page-body start -->
+                                <div class="page-body">
+                                    <div class="row">
+                                        <!-- start -->
+                                        <div class="col-xl-4 col-md-8">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-8">
+                                                            <h4 class="text-c-red">Online</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer bg-c-red">
+                                                    <div class="row align-items-center">
+
+                                                        <div class="col-4 text-right">
+                                                            <img class="avatar border-gray"
+                                                                src="assets/images/Online.png" width="80" height="80">
+                                                        </div>
+                                                        <div class="col md-6">
+                                                            <li class="dropdown">
+
+                                                                <a href="#" class="dropdown-toggle"
+                                                                    data-toggle="dropdown">
+
+                                                                    <span class="notification">5</span>
+
+                                                                    <span class="d-lg-none">Notification</span>
+
+                                                                </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Notification 1</a>
+                                                                    <a class="dropdown-item" href="#">Notification 2</a>
+                                                                    <a class="dropdown-item" href="#">Notification 3</a>
+                                                                    <a class="dropdown-item" href="#">Notification 4</a>
+                                                                    <a class="dropdown-item" href="#">Notification 5</a>
+                                                                </ul>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-md-8">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-8">
+                                                            <h4 class="text-c-red">In Calling</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer bg-c-red">
+                                                    <div class="row align-items-center">
+
+                                                        <div class="col-4 text-right">
+                                                            <img class="avatar border-gray"
+                                                                src="assets/images/calling.png" width="80" height="80">
+                                                        </div>
+                                                        <div class="col-xl-5 md-12">
+                                                            <li class="dropdown">
+
+                                                                <a href="#" class="dropdown-toggle"
+                                                                    data-toggle="dropdown">
+
+                                                                    <span class="notification">5</span>
+
+                                                                    <span class="d-lg-none">Notification</span>
+
+                                                                </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#">Notification 1</a>
+                                                                    <a class="dropdown-item" href="#">Notification 2</a>
+                                                                    <a class="dropdown-item" href="#">Notification 3</a>
+                                                                    <a class="dropdown-item" href="#">Notification 4</a>
+                                                                    <a class="dropdown-item" href="#">Notification 5</a>
+                                                                </ul>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end start -->
+
+                                        <!--  sale analytics start -->
+                                        <div class="col-xl-8 col-md-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h5>Table User</h5>
+                                                    <div class="card-header-right">
+                                                        <ul class="list-unstyled card-option">
+                                                            <li><i class="fa fa fa-wrench open-card-option"></i>
+                                                            </li>
+                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                            <li><i class="fa fa-minus minimize-card"></i></li>
+                                                            <li><i class="fa fa-refresh reload-card"></i></li>
+                                                            <li><i class="fa fa-trash close-card"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover">
+                                                        <td>
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Ketik" value="">
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Ketik" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Ketik" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col-md-8">
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Ketik" value="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <form action="#" method="post">
+                                                                    <button type="Edit">Edit</button>
+                                                                </form>
+                                                                <form action="" method="post">
+                                                                    <button type="delete">Delete</button>
+                                                                </form>
+
+                                                                <form action="#" method="post">
+                                                                    <button type="Call">Call</button>
+                                                                </form>
+                                                            </form>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--  sale analytics end -->
+
+                                        <!--  project and team member start -->
+                                        <div class="col-xl-8 col-md-12">
+                                            <div class="card table-card">
+                                                <div class="card-header">
+                                                    <h5>Projects</h5>
+                                                    <div class="card-header-right">
+                                                        <ul class="list-unstyled card-option">
+                                                            <li><i class="fa fa fa-wrench open-card-option"></i>
+                                                            </li>
+                                                            <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                            <li><i class="fa fa-minus minimize-card"></i></li>
+                                                            <li><i class="fa fa-refresh reload-card"></i></li>
+                                                            <li><i class="fa fa-trash close-card"></i></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card-block">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        <div class="chk-option">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label class="check-task">
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon fa fa-check txt-default"></i>
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        Assigned
+                                                                    </th>
+                                                                    <th>Name</th>
+                                                                    <th>Due Date</th>
+                                                                    <th class="text-right">Priority</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="chk-option">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label class="check-task">
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon fa fa-check txt-default"></i>
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-inline-block align-middle">
+                                                                            <img src="assets/images/avatar-4.jpg"
+                                                                                alt="user image"
+                                                                                class="img-radius img-40 align-top m-r-15">
+                                                                            <div class="d-inline-block">
+                                                                                <h6>John Deo</h6>
+                                                                                <p class="text-muted m-b-0">Graphics
+                                                                                    Designer</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Able Pro</td>
+                                                                    <td>Jun, 26</td>
+                                                                    <td class="text-right"><label
+                                                                            class="label label-danger">Low</label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="chk-option">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label class="check-task">
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon fa fa-check txt-default"></i>
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-inline-block align-middle">
+                                                                            <img src="assets/images/avatar-5.jpg"
+                                                                                alt="user image"
+                                                                                class="img-radius img-40 align-top m-r-15">
+                                                                            <div class="d-inline-block">
+                                                                                <h6>Jenifer Vintage</h6>
+                                                                                <p class="text-muted m-b-0">Web
+                                                                                    Designer</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Mashable</td>
+                                                                    <td>March, 31</td>
+                                                                    <td class="text-right"><label
+                                                                            class="label label-primary">high</label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="chk-option">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label class="check-task">
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon fa fa-check txt-default"></i>
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-inline-block align-middle">
+                                                                            <img src="assets/images/avatar-3.jpg"
+                                                                                alt="user image"
+                                                                                class="img-radius img-40 align-top m-r-15">
+                                                                            <div class="d-inline-block">
+                                                                                <h6>William Jem</h6>
+                                                                                <p class="text-muted m-b-0">
+                                                                                    Developer</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Flatable</td>
+                                                                    <td>Aug, 02</td>
+                                                                    <td class="text-right"><label
+                                                                            class="label label-success">medium</label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="chk-option">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label class="check-task">
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon fa fa-check txt-default"></i>
+                                                                                    </span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-inline-block align-middle">
+                                                                            <img src="assets/images/avatar-2.jpg"
+                                                                                alt="user image"
+                                                                                class="img-radius img-40 align-top m-r-15">
+                                                                            <div class="d-inline-block">
+                                                                                <h6>David Jones</h6>
+                                                                                <p class="text-muted m-b-0">
+                                                                                    Developer</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Guruable</td>
+                                                                    <td>Sep, 22</td>
+                                                                    <td class="text-right"><label
+                                                                            class="label label-primary">high</label>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  project end -->
+                                        
+                                    </div>
+                                </div>
+                                <!-- Page-body end -->
+                                <footer>
+                                    <div class="container-fluid">
+                                      <nav class="float-left">
+                                        <ul>
+                                          <li>
+                                            <p>Copyright</p>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                      <div class="copyright float-right">
+                                        &copy;
+                                        <script>
+                                          document.write(new Date().getFullYear())
+                                        </script>, made with <i class="material-icons">favorite</i> by Syapril.
+                                      </div>
+                                    </div>
+                                  </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
